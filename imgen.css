@@ -7,29 +7,40 @@
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: #0167ff;
     overflow: hidden;
     width: 100%;
     height: 0;
     transition: .5s ease;
+    opacity: calc(1.1);
   }
+  
   .overlay1{
-    background-color: #dee2ff;
+    background-color: #0167ff;
   }
+
   .imagen:hover .overlay {
     bottom: 0;
     height: 50%;
     width: 40%;
     border-radius: 10%;
   }
+  .imagen:hover .over1 {
+    bottom: 0;
+    
+    height: 100%;
+    width: 75%;
+    
+    border-radius: 10%;
+  }
   .text {
     white-space: nowrap; 
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     position: absolute;
     overflow: hidden;
     top: 35%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
@@ -38,7 +49,7 @@
    padding-right: 11%;
   }
   .button1{
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: #002f96;
     position: absolute;
     left: 50%;
@@ -47,8 +58,10 @@
   }
   .button-top1{
    top: 70%;
+   
   }
   .button-top2{
     top: 85%;
     background-color: #63cb77;
+
   }

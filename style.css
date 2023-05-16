@@ -116,16 +116,16 @@ h3{
 h2 {
   color: var(--color);
 }
-.clas{
+.iconos-lin{
   display: flex;
   justify-content: center;
   width: 10vw;
   height: 10vw;
   gap: 25px;
   padding-left: 5vw;
-  padding-top: 50px;
+  padding-top: 0px;
 }
-.clas img{
+.iconos-lin img{
   width: 40px;
   height: 40px;
   padding: 8px;
@@ -144,7 +144,7 @@ h2 {
 	font-family:Arial;
 	font-size:17px;
 	font-weight:bold;
-	padding:15px 42px;
+	padding: 15px 40px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #1429e7;
 }
@@ -349,42 +349,11 @@ p{
     margin: 2em;
     list-style: none;
   }
-  .clas{
-    display: flex;
-    justify-content: center;
-    width: 20vw;
-    height: 10vw;
-    gap: 25px;
-    padding-left: 5vw;
-    padding-top: 50px;
-  }
-  .clas img{
-    width: 10vw;
-    height: 100px;
-    padding: 20px;
-    color: var(--menu);
-    border-radius: 80%;
-  }
-  .content h1{
-    transform: translate(-8em, -80%);
-  }
-  .icono img:hover{
+ 
+  .iconos-lin img:hover{
     background-color: var(--menu);
     transition: 3s;
     }
-  .download-cv,
-  .project-details-button {
-  padding: 15px 50px;
-  background-color: var(--menu);
-  border: none;
-  margin-top: 70px;
-  cursor: pointer;
-  flex-direction: column;
-  }
-.download-cv{
-  flex-direction: column;
-  display: flex;
-}
 .download-cv:hover {
   background-color: var(--menu);
   box-shadow: none;
@@ -404,9 +373,23 @@ p{
     display: flex;
     flex-direction: row-reverse;
     flex-direction: column; 
+    margin-top: 5%;
   }
   .main a{
     text-decoration: none; 
+  }
+  .content h1{
+    transform: translate(-10em, -60%);
+  }
+   .info-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main img {
+    width: min(15em, 250px);
+    height: auto;
   }
   .Expe {
     width: 80vw;
@@ -422,29 +405,12 @@ p{
     flex-direction: row-reverse;
     flex-direction: column;
   }
-  .main img {
-    width: min(15em, 250px);
-   
-    height: auto;
-  }
-  .info-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  .info-content .sotial-networks,
-  .info-content__subtitle {
-    display: block;
-  }
-  .info-content__subtitle {
-    margin-bottom: .5em;
-  }
-  .clas img{
+  
+  .iconos-lin img{
     width: 40px;
     height: 40px;
-    padding: 7px;
-    margin-top: -45px;
+    padding-left: 7px;
+    margin-left: 95%;
   }
   .download-cv{
     margin-top: -10px;
@@ -454,7 +420,7 @@ p{
     cursor: pointer;
   }
   h3{
-    color: #fff;
+    color: #000000;
   }
   .Experience-info {
     grid-column: 5/10;
@@ -488,10 +454,10 @@ p{
     width: 80%;
     height: 80%;
   }
-  #id-contacto h2 {
+  .id-contacto h2 {
     font-size: 30px;
     font-weight: 00;
-    padding-left: 130px;
+    padding-left: 165px;
     padding-top: 50px;
     color: #000000;
   }
@@ -499,7 +465,7 @@ p{
     padding-left: 1%;
   }
   .text-p{
-    font-size: 7px;
+    font-size: 8px;
    }
   .flecha{
     margin-left: 19em;
