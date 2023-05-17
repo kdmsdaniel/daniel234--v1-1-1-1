@@ -21,8 +21,7 @@ h3{
   background-color: var(--morado);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  color: var(--verde);
-  
+  color: var(--verde); 
 }
 .navbar {
   display: flex;
@@ -134,19 +133,23 @@ h2 {
    color: var(--verde);
    font-weight: 600;
    padding-left: 10%;
+
 }
 .designer{
     padding-left: 30%;
     padding-top: -30%;
+    border-bottom: 1px solid var(--verde);
 }
 .designer-A{
   padding-left: 30%;
   padding-top: -30%; 
+ 
 }
 .divider p{
     font-weight: 100;
     font-size: 20px;
     color: var(--verde);
+
 }
 .habilidades{
   background-color:var(--morado);
@@ -282,15 +285,14 @@ h6{
         width: 100vw;
         height: 100vh;
     }
-    
   .menu {
     flex-direction: column;
     justify-content: center;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 10px;
     height: auto;
-    background-color: var(--menu);
+    background-color: var(--verde);
     z-index: 1;
     transform: translateX(-110%);
     transition: all .2s ease-in-out;
@@ -298,11 +300,14 @@ h6{
   .show-menu {
     border-bottom-right-radius: 10%;
     transform: translateX(0%);
-    transition: all .5s ease-in-out;
+    transition: all 1s ease-in-out;
   }
   .menu li {
-    margin: 2em;
+    margin: 10px 10px 10px 0px;
     list-style: none;
+  }
+  .menu .active {
+    color: var(--blanco);
   }
   .iconos-lin img:hover{
     background-color: var(--menu);
@@ -333,7 +338,7 @@ h6{
     text-decoration: none; 
   }
   .content h1{
-    transform: translate(0em, -60%);
+    transform: translate(0em, -30%);
   }
    .info-content {
     display: flex;
