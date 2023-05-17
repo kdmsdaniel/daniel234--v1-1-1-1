@@ -1,6 +1,6 @@
 :root {
   --verde: #33B0BE;
-  --morado:#242635;
+  --morado:#000000;
   --blanco:#fff;
   --gris: #D1CECA;
 }
@@ -282,6 +282,7 @@ h6{
         width: 100vw;
         height: 100vh;
     }
+    
   .menu {
     flex-direction: column;
     justify-content: center;
@@ -303,7 +304,6 @@ h6{
     margin: 2em;
     list-style: none;
   }
- 
   .iconos-lin img:hover{
     background-color: var(--menu);
     transition: 3s;
@@ -333,7 +333,7 @@ h6{
     text-decoration: none; 
   }
   .content h1{
-    transform: translate(-10em, -60%);
+    transform: translate(0em, -60%);
   }
    .info-content {
     display: flex;
