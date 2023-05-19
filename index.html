@@ -13,14 +13,21 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="imgen.css">
-  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="body.css">
   <link rel="shortcut icon" href="Portafolio/OIP.jpg" type="image/x-icon">
 </head>
 
 <body>
   <header id="wrapper" class="wrapper">
     <nav class="navbar">
-      <h2></h2>
+        <div>
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
       <ul class="menu" id="menu">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="#Experience">Experiencia</a></li>
@@ -140,7 +147,9 @@
           <div class="carousel-item active">
             <h3>Ecommerce</h3>
             <div class="imagen">
+              <a href="https://kdms290799.netlify.app/" target="_blank">
               <img src="Portafolio/Imágenes/1.PNG" alt="Los Angeles" width="1100" height="500">
+            </a>
               <div class="overlay overlay1">
                 <p  class="text-p">
                   Diseñe un modelo e-commerce front-end. <br> El backend se implementó basado en node.js,
@@ -151,7 +160,9 @@
           <div class="carousel-item">
             <h3>Box-Shadow</h3>
             <div class="imagen">
+               <a href="https://storied-yeot-dadba2.netlify.app/" target="_blank" >
                <img src="Portafolio/Imágenes/2.PNG" alt="Chicago" width="1100" height="500">
+               </a>
               <div class="overlay overlay1">
                 <p class="text-p" >
                 Diseñe la propiedad CSS box-Shadow
@@ -164,7 +175,9 @@
           <div class="carousel-item">
             <h3>Notas</h3>
               <div class="imagen">
+              <a href="https://ornate-dragon-577aec.netlify.app/" target="_blank">
               <img src="Portafolio/Imágenes/6.PNG" alt="New York" width="1100" height="500">
+              </a>
               <div class="overlay overlay1">
                 <p class="text-p" >
                   Diseñe una aplicación que muestra cita: mensaje de unos autores.
@@ -210,5 +223,6 @@
 
   </footer>
   <script src="app.js"></script>
+  <script src="body.js"></script>
 </body>
 </html>
