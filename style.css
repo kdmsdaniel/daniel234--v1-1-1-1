@@ -4,6 +4,7 @@
   --blanco:#fff;
   --gris: #D1CECA;
 }
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -13,48 +14,56 @@
 }
 body {
   font-family:Arial, Helvetica, sans-serif;
+  background-color: var(--morado);
 }
 h3{
   color: var(--verde);
 }
 .wrapper { 
+  margin-top: 100px;
+  height: 80vh;
   background-color: var(--morado);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: var(--verde); 
 }
+
 .navbar {
-  display: flex;
-  justify-content: space-between;
   padding: 1em;
-  background-color: var(--color);
+  position: fixed;
+  background-color: var(--morado) ; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 100;
 }
 .menu {
-  display: flex;
-  width: 50%;
-  justify-content: space-around;
-  color: var(--verde);
-}
-.menu a {
-  color: var(--blanco);
-  text-decoration: none;
-  padding: 10px 20px;
-}
-.menu li {
-  list-style: none;
-}
-.menu a:hover {
-  background-color: var(--gris);
-  color: var(--morado);
-}
-.menu .active {
-  color: var(--verde);
-}
-.toggle-menu,
-.info-content__subtitle,
-.info-content .sotial-networks {
-  display: none;
-}
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    color: var(--verde);
+  }
+  .menu a {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  .menu li {
+    list-style: none;
+  }
+  .menu a:hover {
+    background-color: var(--gris);
+    color: var(--morado);
+  }
+  .menu .active {
+    color: var(--verde);
+  }
+  .toggle-menu,
+  .info-content__subtitle,
+  .info-content .sotial-networks {
+    display: none;
+  }
 .main {
   margin: 0 auto;
   width: 80vw;
@@ -66,22 +75,6 @@ h3{
 }
 h2 {
   color: var(--color);
-}
-.iconos-lin{
-  display: flex;
-  justify-content: center;
-  width: 10vw;
-  height: 10vw;
-  gap: 25px;
-  padding-left: 5vw;
-  padding-top: 0px;
-}
-.iconos-lin img{
-  width: 40px;
-  height: 40px;
-  padding: 8px;
-  background-color: var(--morado);
-  border-radius: 80%;
 }
 .download-cv {
 	box-shadow: 0px 1px 0px 0px var(--gris);
@@ -143,13 +136,11 @@ h2 {
 .designer-A{
   padding-left: 30%;
   padding-top: -30%; 
- 
 }
 .divider p{
     font-weight: 100;
     font-size: 20px;
     color: var(--verde);
-
 }
 .habilidades{
   background-color:var(--morado);
@@ -166,6 +157,20 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+.iconos-lin{
+  display: flex;
+  justify-content: center;
+  width: 10vw;
+  height: 10vw;
+  gap: 25px;
+  padding-left: 5vw;
+}
+.iconos-lin img{
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  background-color: var(--morado);
 }
 .iconos{
   width: 200px;
@@ -431,4 +436,6 @@ h6{
   .flecha{
     margin-left: 20em;
   }
+ 
+  
 }
