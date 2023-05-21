@@ -32,3 +32,19 @@ $(document).ready(function(){
  
 });
 
+$(document).ready(function(){
+
+  $("#myCarouselcerti").carousel();
+  // $(".cert1").click(function(){
+  //   $("#myCarouselcerti").carousel(0);
+  // });
+  // $(".certi2").click(function(){
+  //   $("#myCarouselcerti").carousel(1);
+  // });
+  // $(".cert3").click(function(){
+  //   $("#myCarouselcerti").carousel(2);
+  // })
+ 
+});
+
+
