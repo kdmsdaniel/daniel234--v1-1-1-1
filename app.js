@@ -1,8 +1,7 @@
 let menu = document.getElementById('menu');
 let toggle_open = document.getElementById('toggle_open');
 let toggle_close = document.getElementById('toggle_close');
-toggle_open.addEventListener('click', toggleMenu);
-toggle_close.addEventListener('click', toggleMenu);
+
 
 function toggleMenu() {
   menu.classList.toggle('show-menu');
@@ -16,13 +15,6 @@ function toggleMenu() {
     toggle_close.style.display = 'none';
   }
 }
-$(document).ready(function() {
-  $('a[href^="#"]').click(function() {
-    let destino = $(this.hash); 
-    $('html, body').animate({ scrollTop: destino.offset().top }); //Llega a su destino con el tiempo deseado
-    return false;
-  });
-});
 
 $(document).ready(function(){
 

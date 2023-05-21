@@ -102,14 +102,22 @@ h6{
   align-items:flex-start;
 }
 .Expe {
-  width: 25vw;
-  grid-column: 1/5;
+  width: 40vw;
+  height: 20vw;
+  grid-column: 2/5;
   padding-left: 200px;
-  padding-top: 10%;
+  padding-top: 7%;
   color:var(--verde);
+  background-color: var(--verde);
+ border-bottom-left-radius: 100px;
+ border-top-right-radius: 100px;
+}
+.Expe h2{
+  
+  color: #ebf2f3;
 }
 .Experience-info {
-  grid-column: 7/10;
+  grid-column: 6/9;
   padding: 1em;
 }
 .Experience-info h2 {
@@ -354,7 +362,7 @@ p{
   }
   .Experience-info {
     grid-column: 5/10;
-    padding: 3em;
+    padding: 23em 5em 7em 7em;
   } 
   .Experience-info h2 {
     font-size: 2em;
@@ -403,6 +411,4 @@ p{
   .flecha{
     margin-left: 20em;
   }
- 
-  
 }
