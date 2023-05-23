@@ -366,7 +366,7 @@ p{
   }
   .Experience-info {
     grid-column: 5/10;
-    padding: 23em 5em 6em 3em;
+    padding: 23em 5em 6em 2em;
   } 
   .Experience-info h2 {
     font-size: 2em;
