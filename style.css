@@ -16,13 +16,14 @@ h5{
 }
 h6{
   color: var(--verde);
- }
+}
 .wrapper { 
   margin-top: 100px;
   height: 80vh;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: var(--verde); 
+ 
 }
 .navbar {
   padding: 1em;
@@ -101,20 +102,19 @@ h6{
   height: auto;
   align-items:flex-start;
 }
-.Expe {
+.certificado {
+  
   width: 40vw;
   height: 20vw;
   grid-column: 2/5;
-  padding-left: 200px;
+  padding-left: 100px;
   padding-top: 7%;
   color:var(--verde);
-  background-color: var(--verde);
- border-bottom-left-radius: 100px;
- border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
 }
-.Expe h2{
-  
-  color: #ebf2f3;
+.certificado h2{
+  color: var(--verde);
 }
 .Experience-info {
   grid-column: 6/9;
@@ -313,6 +313,11 @@ p{
     flex-direction: row-reverse;
     flex-direction: column; 
     margin-top: 5%;
+  }
+  .certificado {
+    margin-top: -60vw;
+    width: 80vw;
+    height: 20vw;
   }
   .main a{
     text-decoration: none; 
