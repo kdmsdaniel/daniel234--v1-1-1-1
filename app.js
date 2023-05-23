@@ -49,15 +49,12 @@ $(document).ready(function(){
 
 $(document).ready(function() { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
   $('.azul').click(function(event) { /* Seleccionamos el elemento que queremos que realice la función */
-    $('body').css('background', '#242635' ); /* La función a realizar añadir CSS al body previamente seleccionado */
+  $('h1, h2, h3, h4, h6, p, span').css('color', '#33B0BE'); 
+  $('body').css('background', '#242635' ); /* La función a realizar añadir CSS al body previamente seleccionado */
   });
   $('.blanco').click(function(event) { /* Seleccionamos el elemento que queremos que realice la función */
-    $('body').css('background','#fff'); /* La función a realizar añadir CSS al body previamente seleccionado */
-  });
-  $('.azul').click(function(event) { /* Seleccionamos el elemento que queremos que realice la función */
-    $('h1, h2, h3, h4, h5, h6, p, span').css('color', '#33B0BE'); /* La función a realizar añadir CSS al h1 previamente seleccionado */
-  });
-  $('.blanco').click(function(event) { /* Seleccionamos el elemento que queremos que realice la función */
-    $('h1, h2, h3, h4, h5, h6, p, span').css('color', '#242635'); /* La función a realizar añadir CSS al h1 previamente seleccionado */
-  });
+    $('h1, h2, h3, h4, h6, p, span').css('color', '#242635'); 
+  $('body').css('background','#fff'); /* La función a realizar añadir CSS al body previamente seleccionado */
+ });
+
 });
