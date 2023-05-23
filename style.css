@@ -403,6 +403,9 @@ p{
     padding-top: 50px;
     color: var(--verde);
   }
+  .footer {
+    background-color: #242635;
+  }
   .mobil, .email {
     padding-left: 1%;
   }
