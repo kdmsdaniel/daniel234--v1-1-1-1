@@ -1,5 +1,4 @@
-const formulario = document.querySelector("#formulario");
-formulario.addEventListener("submit", validarFormulario);
+
 let menu = document.getElementById('menu');
 let toggle_open = document.getElementById('toggle_open');
 let toggle_close = document.getElementById('toggle_close');
@@ -9,7 +8,8 @@ toggle_close.addEventListener('click', toggleMenu);
 const title = document.title;
 
 window.addEventListener('blur', ()=> {
-  document.title = 'No te vayas...';
+  const truen = "No te vayas..."
+  document.title = `${truen}`;
 })
 window.addEventListener('focus', ()=> {
   document.title = title;
@@ -20,12 +20,6 @@ function kdms(){
   alert(uno);
 }
 
-function validarFormulario(e){
-    e.preventDefault();
-    const nombre = document.querySelector("#nombre").value
-    const respuesta = document.getElementById("respuesta");
-    respuesta.textContent = `¡Hola! ${nombre}`
-}
 
 let dado = Number((Math.random() * 6).toFixed(0));
 console.log(dado)

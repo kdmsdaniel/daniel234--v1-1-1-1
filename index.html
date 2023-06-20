@@ -25,10 +25,14 @@
             <button class="fas fa-moon azul "></button>
             <button class="fas fa-sun blanco "></button>
         </div> 
-        <form id="formulario" >
-          <input id="nombre" type="text" placeholder="ingrese su nombre">
-          <button class="btn btn-primary " type="submit">MOSTRAR DATOS</button>
+        <form action="https://formsubmit.co/kelvin.peres2907@gmail.com" method="POST" >
+          <input class="nombre" type="text" placeholder="Ingrese su nombre" name="nombre" required>
+          <input class="mensaje" type="email" placeholder="Enviar mensaje?" name="email" required>
+          <input type="hidden" name="_next" value="https://rainbow-faun-2a4f07.netlify.app/index.html">
+          <input  type="hidden" name="_captcha" value="false">
+            <button class="btn btn-primary " type="submit">Enviar DATOS</button>
         </form>
+
       <ul class="menu" id="menu">
         <li><a href="index.html" class="active"> Home</a></li>
         <li><a href="#Experience" class="active">Experiencia</a></li>
