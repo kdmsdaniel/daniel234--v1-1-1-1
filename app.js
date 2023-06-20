@@ -1,8 +1,35 @@
+const formulario = document.querySelector("#formulario");
+formulario.addEventListener("submit", validarFormulario);
 let menu = document.getElementById('menu');
 let toggle_open = document.getElementById('toggle_open');
 let toggle_close = document.getElementById('toggle_close');
 toggle_open.addEventListener('click', toggleMenu);
 toggle_close.addEventListener('click', toggleMenu);
+
+const title = document.title;
+
+window.addEventListener('blur', ()=> {
+  document.title = 'no te vayas';
+})
+window.addEventListener('focus', ()=> {
+  document.title = title;
+})
+
+function kdms(){
+  let uno = "Kelvin Daniel Meneses Salazar";
+  alert(uno);
+}
+
+function validarFormulario(e){
+    e.preventDefault();
+    const nombre = document.querySelector("#nombre").value
+    const respuesta = document.getElementById("respuesta");
+    respuesta.textContent = `¡Hola! ${nombre}`
+}
+
+let dado = Number((Math.random() * 6).toFixed(0));
+console.log(dado)
+
 
 function toggleMenu() {
   menu.classList.toggle('show-menu');
@@ -46,15 +73,13 @@ $(document).ready(function(){
   // })
  
 });
-
-$(document).ready(function() { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
-  $('.azul').click(function(event) { /* Seleccionamos el elemento que queremos que realice la función */
+$(document).ready(function() { 
+  $('.azul').click(function(event) { 
   $('h1, h2, h3, h4, h6, p, span').css('color', '#33B0BE'); 
-  $('body').css('background', '#242635' ); /* La función a realizar añadir CSS al body previamente seleccionado */
+  $('body').css('background', '#242635' ); 
   });
-  $('.blanco').click(function(event) { /* Seleccionamos el elemento que queremos que realice la función */
+  $('.blanco').click(function(event) {
     $('h1, h2, h3, h4, h6, p, span').css('color', '#242635'); 
-  $('body').css('background','#fff'); /* La función a realizar añadir CSS al body previamente seleccionado */
+  $('body').css('background','#fff');
  });
-
 });

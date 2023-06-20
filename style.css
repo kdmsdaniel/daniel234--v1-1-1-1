@@ -71,7 +71,9 @@ h6{
   align-items: center;
   gap: 2em;
 }
-
+.contentspan{
+  color: #D1CECA;
+}
 .download-cv {
 	box-shadow: 0px 1px 0px 0px var(--gris);
 	background:linear-gradient(to bottom, var(--verde) 10%, var(--verde) 90%);

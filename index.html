@@ -24,7 +24,11 @@
         <div> 
             <button class="fas fa-moon azul "></button>
             <button class="fas fa-sun blanco "></button>
-        </div>
+        </div> 
+        <form id="formulario" >
+          <input id="nombre" type="text" placeholder="ingrese su nombre">
+          <button class="btn btn-primary " type="submit">MOSTRAR DATOS</button>
+        </form>
       <ul class="menu" id="menu">
         <li><a href="index.html" class="active"> Home</a></li>
         <li><a href="#Experience" class="active">Experiencia</a></li>
@@ -40,7 +44,11 @@
     <header class="main">
       <div class="info-content">
         <div class="content">
-          <h1>Kelvin D Meneses</h1>
+
+          <h2 id="respuesta"></h2>
+          <h1 onclick="kdms()">Kelvin D Meneses</h1>
+         
+          <h2>Desarrollador <span class="contentspan">Full Stack Web</span> </h2>
         </div>
         <p class="info-content__p">
           FULL STACK Web. HTML, CSS, JAVASCRIPT, REDUX,
@@ -64,7 +72,7 @@
           <br>
         <a href="Portafolio/documentos/Kelvin D meneses.pdf" download>
         <button class="download-cv">&#128231; Descargar CV</button>
-      </a>  
+         </a>  
         </div>
       </div>
       
@@ -73,7 +81,6 @@
         <div class="overlay over1">
           <div class="text">Kelvin <br> Daniel <br> Meneses <br> Salazar</div>
         </div>
-    
       </div>
       
     </header>
