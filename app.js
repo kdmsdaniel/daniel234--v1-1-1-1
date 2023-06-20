@@ -9,7 +9,7 @@ toggle_close.addEventListener('click', toggleMenu);
 const title = document.title;
 
 window.addEventListener('blur', ()=> {
-  document.title = 'no te vayas';
+  document.title = 'No te vayas...';
 })
 window.addEventListener('focus', ()=> {
   document.title = title;
